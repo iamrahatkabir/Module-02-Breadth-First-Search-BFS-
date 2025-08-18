@@ -20,10 +20,10 @@ void bfs(int src)
 
         for(int child : adj_list[parent])
         {
-            if(visited_arr[child] == true)
+            if(visited_arr[child] == false)
             {
                 q.push(child);
-                visited_arr[child] = false;
+                visited_arr[child] = true;
             }
         }
 
