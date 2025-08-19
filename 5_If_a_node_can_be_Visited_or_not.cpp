@@ -16,7 +16,7 @@ void bsf(int src)
         q.pop();
         visited_array[parent] = true;
 
-        // cout << parent << " ";
+        cout << parent << " ";
 
         for(auto child : adj_list[parent])
         {
