@@ -19,7 +19,7 @@ void bfs(int src)
         int par = q.front();
         q.pop();
 
-        for (auto child : adj_list[par])
+        for (auto child : adj_list[par]) //child will take the values of adj_list[par]-> this index;
         {
             if (!visited_arr[child])
             {
